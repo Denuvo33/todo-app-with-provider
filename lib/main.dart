@@ -4,7 +4,7 @@ import 'package:tugas_harian_app/provider/todo_provider.dart';
 import 'package:tugas_harian_app/provider/user_auth_provider.dart';
 import 'package:tugas_harian_app/services/db_auth_service.dart';
 import 'package:tugas_harian_app/services/db_todo_service.dart';
-import 'package:tugas_harian_app/view/home_page.dart';
+import 'package:tugas_harian_app/view/login_view.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Daily Notes App',
-        home: HomePage(),
+        home: LoginView(),
         theme: ThemeData.dark(
           useMaterial3: true,
         ).copyWith(
